@@ -1,0 +1,533 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap");
+* {
+  margin: none;
+  padding: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #DFF7FF;
+}
+
+.container {
+  width: 95%;
+  background-color: #DFF7FF;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav-bar .menubar {
+  display: none;
+}
+.nav-bar .bar {
+  display: none;
+}
+.nav-bar .logo {
+  width: 50%;
+}
+.nav-bar .logo h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #141937;
+  margin: 0;
+}
+.nav-bar .logo h1 span {
+  color: #11C4FE;
+}
+.nav-bar .menu {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-bar .menu .list {
+  width: 50%;
+}
+.nav-bar .menu .list ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav-bar .menu .list ul li {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24;
+  line-height: 29px;
+  color: rgba(20, 25, 55, 0.7843137255);
+  list-style: none;
+  list-style: none;
+}
+.nav-bar .menu .list ul li:hover a {
+  color: #141937;
+  font-weight: 700;
+}
+.nav-bar .menu .list ul li a {
+  text-decoration: none;
+}
+.nav-bar .menu .button {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-bar .menu .button button {
+  width: 162px;
+  height: 45px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24;
+  line-height: 19px;
+  color: white;
+  background-color: #11C4FE;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+}
+@media (max-width: 768px) {
+  .nav-bar .menu {
+    display: none;
+  }
+  .nav-bar .bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .nav-bar .drop {
+    display: none;
+  }
+  .nav-bar .drop .menubar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar .drop .menubar .list {
+    width: 100%;
+    background-color: #DFF7FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .nav-bar .drop .menubar .list ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-bar .drop .menubar .list ul li {
+    font-family: "Space Grotesk";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24;
+    line-height: 29px;
+    color: rgba(20, 25, 55, 0.7843137255);
+    list-style: none;
+    list-style: none;
+  }
+  .nav-bar .drop .menubar .list ul li:hover a {
+    color: #141937;
+    font-weight: 700;
+  }
+  .nav-bar .drop .menubar .list ul li a {
+    text-decoration: none;
+  }
+  .nav-bar .drop .menubar .list .button button {
+    width: 162px;
+    height: 45px;
+    font-family: "Syne";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24;
+    line-height: 19px;
+    color: white;
+    background-color: #11C4FE;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+  }
+}
+
+.about {
+  margin-top: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about .image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .image img {
+  width: 90%;
+}
+.about .content {
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about .content .header {
+  width: 100%;
+}
+.about .content .header h1 {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 77px;
+  color: rgba(20, 25, 55, 0.7843137255);
+  margin-bottom: 14px;
+}
+.about .content .header h1 span {
+  color: #11C4FE;
+}
+.about .content .pra {
+  width: 100%;
+}
+.about .content .pra p {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141937;
+}
+.about .content .button {
+  width: 100%;
+  margin-top: 14px;
+}
+.about .content .button button {
+  width: 162px;
+  height: 45px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24;
+  line-height: 19px;
+  color: white;
+  background-color: #11C4FE;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+}
+@media (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about .image {
+    width: 100%;
+  }
+  .about .content {
+    width: 100%;
+  }
+  .about .content .header h1 {
+    font-size: 32px;
+  }
+}
+
+.info {
+  margin-top: 64px;
+  width: 100%;
+  height: 100%;
+  margin: none;
+  padding: 0;
+  background-color: #141937;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.info .info-container {
+  width: 95%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .info-container .imag {
+  width: 50%;
+}
+.info .info-container .imag img {
+  width: 95%;
+}
+.info .info-container .content {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info .info-container .content .para {
+  width: 100%;
+  height: 60%;
+}
+.info .info-container .content .para h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #11C4FE;
+  width: 100%;
+  margin-bottom: 24px;
+}
+.info .info-container .content .para p {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141937;
+  color: white;
+}
+.info .info-container .content .contr {
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.info .info-container .content .contr .box {
+  width: 50%;
+}
+.info .info-container .content .contr .box h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #11C4FE;
+}
+.info .info-container .content .contr .box p {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141937;
+  color: white;
+}
+@media (max-width: 768px) {
+  .info .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .info .info-container .imag {
+    width: 100%;
+  }
+  .info .info-container .content {
+    width: 100%;
+  }
+  .info .info-container .content .contr {
+    margin: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .info {
+    background-color: #141937;
+  }
+  .info h1 {
+    font-size: 24px;
+  }
+  .info p {
+    font-size: 12px;
+  }
+}
+
+.our-service {
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.our-service .tiitle-1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #11C4FE;
+}
+.our-service .tiitle-2 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  text-transform: capitalize;
+  color: #141937;
+  margin: 0;
+}
+.our-service p {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141937;
+}
+
+.table {
+  margin-top: 64px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.table .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.table .row .cullom {
+  width: 30%;
+  background-color: white;
+  padding: 12px;
+  margin: 12px;
+  box-shadow: 10.4035px 13.8714px 42.77px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.table .row .cullom h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #11C4FE;
+}
+.table .row .cullom p {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141937;
+}
+@media (max-width: 768px) {
+  .table .row {
+    flex-direction: column;
+  }
+  .table .row .cullom {
+    width: 100%;
+  }
+}
+
+.form {
+  padding: 30px 10px;
+  border-radius: 5px;
+  width: 90%;
+  background-color: #141937;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 64px;
+}
+.form .text {
+  width: 50%;
+  align-items: center;
+}
+.form .text h1 {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #11C4FE;
+  color: white;
+}
+.form .text p {
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #141937;
+  color: white;
+}
+.form form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form form input {
+  padding: 0px 10px;
+  height: 50px;
+  width: 100%;
+  background: #DFF7FF;
+  border: 1px solid #11C4FE;
+  border-radius: 4px;
+  margin: 6px 0;
+  outline: none;
+}
+.form form button {
+  width: 162px;
+  height: 45px;
+  font-family: "Syne";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24;
+  line-height: 19px;
+  color: white;
+  background-color: #11C4FE;
+  outline: none;
+  border-radius: 4px;
+  border: none;
+  margin: 6px 0;
+}
+@media (max-width: 768px) {
+  .form .text {
+    width: 100%;
+  }
+  .form form {
+    width: 100%;
+  }
+  .form form input {
+    width: 90%;
+  }
+}
+
+.socailicon {
+  width: 90%;
+  margin-top: 24px;
+  padding: 10px;
+  border-top: 1px solid #11C4FE;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
